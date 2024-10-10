@@ -99,6 +99,7 @@ const (
 // IPAM providers.
 const (
 	InClusterIPAMProviderName = "in-cluster"
+	InfobloxIPAMProviderName  = "infoblox"
 )
 
 // Add-on providers.
@@ -410,7 +411,11 @@ func (p *providersClient) defaults() []Provider {
 			url:          "https://github.com/kubernetes-sigs/cluster-api-ipam-provider-in-cluster/releases/latest/ipam-components.yaml",
 			providerType: clusterctlv1.IPAMProviderType,
 		},
-
+		&provider{
+			name:         InfobloxIPAMProviderName,
+			url:          "https://github.com/telekom/cluster-api-ipam-provider-infoblox/releases/latest/ipam-components.yaml",
+			providerType: clusterctlv1.IPAMProviderType,
+		},
 		// Add-on providers
 		&provider{
 			name:         HelmAddonProviderName,

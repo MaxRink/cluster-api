@@ -61,6 +61,7 @@ updated info about which API version they are supporting.
 
 ## IP Address Management (IPAM)
 - [In Cluster](https://github.com/kubernetes-sigs/cluster-api-ipam-provider-in-cluster)
+- [Infoblox](https://github.com/telekom/cluster-api-ipam-provider-infoblox)
 
 ## Addon
 - [Helm](https://github.com/kubernetes-sigs/cluster-api-addon-provider-helm/)

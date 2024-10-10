@@ -156,6 +156,7 @@ virtink                 InfrastructureProvider   https://github.com/smartxworks/
 vsphere                 InfrastructureProvider   https://github.com/kubernetes-sigs/cluster-api-provider-vsphere/releases/latest/            infrastructure-components.yaml
 vultr-vultr             InfrastructureProvider   https://github.com/vultr/cluster-api-provider-vultr/releases/latest/                        infrastructure-components.yaml
 in-cluster              IPAMProvider             https://github.com/kubernetes-sigs/cluster-api-ipam-provider-in-cluster/releases/latest/    ipam-components.yaml
+infoblox                IPAMProvider             https://github.com/telekom/cluster-api-ipam-provider-infoblox/releases/latest/              ipam-components.yaml
 helm                    AddonProvider            https://github.com/kubernetes-sigs/cluster-api-addon-provider-helm/releases/latest/         addon-components.yaml
 `
 
@@ -371,6 +372,10 @@ var expectedOutputYaml = `- File: core_components.yaml
   Name: in-cluster
   ProviderType: IPAMProvider
   URL: https://github.com/kubernetes-sigs/cluster-api-ipam-provider-in-cluster/releases/latest/
+- File: ipam-components.yaml
+  Name: infoblox
+  ProviderType: IPAMProvider
+  URL: https://github.com/kubernetes-sigs/telekom/cluster-api-ipam-provider-infoblox/releases/latest/
 - File: addon-components.yaml
   Name: helm
   ProviderType: AddonProvider

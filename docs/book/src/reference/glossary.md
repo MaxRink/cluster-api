@@ -123,6 +123,9 @@ Cluster API Provider Azure
 ### CAIPAMIC
 Cluster API IPAM Provider In Cluster
 
+### CAIPAMIB
+Cluster API IPAM Provider Infoblox
+
 ### Cloud provider
 
 Or __Cloud service provider__
