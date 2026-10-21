@@ -60,3 +60,21 @@ updates:
   labels:
     - "area/dependency"
     - "ok-to-test"
+- package-ecosystem: docker
+  directories:
+  - /
+  - /cmd/clusterctl
+  - /hack/scripts/verify
+  - /hack/scripts/verify/boilerplate
+  - /test/extension
+  - /test/infrastructure/docker
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 5
+  groups:
+    routine-updates:
+      patterns:
+      - '*'
+      update-types:
+      - minor
+      - patch
